@@ -1,7 +1,7 @@
 # CMPS 2200 Recitation 6
 ## Answers
 
-**Name:**_________________________
+**Name:** Tyler
 
 
 Place all written answers from `recitation-06.md` here for easier grading.
@@ -9,14 +9,6 @@ Place all written answers from `recitation-06.md` here for easier grading.
 
 
 - **d.**
-
-File | Fixed-Length Coding | Huffman Coding | Huffman vs. Fixed-Length
-----------------------------------------------------------------------
-f1.txt    |                     |                |
-alice29.txt    |                     |                |
-asyoulik.txt    |                     |                |
-grammar.lsp    |                     |                |
-fields.c    |                     |                |
 
 | File|   Fixed-Length Coding |   Huffman Coding |   Huffman vs. Fixed-Length |
 |-----|---------------------|----------------------|------------------|
@@ -26,8 +18,8 @@ fields.c    |                     |                |
 | grammar.lsp |               26047 |                17356 |            0.666334 |
 | fields.c |               78050 |                56206 |            0.720128 |
 
-The consistent trend I see is that the Huffman Coding algorithm has significatnly less cost than the Fixed-Length Coding algorithm for all five files. The ratio of Huffman Coding cost to Fixed-Length Coding cost for all five files is around 0.6-0.7. The ratio of Huffman Coding cost to Fixed-Length Coding cost also seems to increase when the file size increases, although this increase is not directly proportional.
+The consistent trend I see is that the Huffman Coding algorithm has significatnly less cost than the Fixed-Length Coding algorithm for all five files. The ratio of Huffman Coding cost to Fixed-Length Coding cost for all five files is around 0.6-0.7. The ratio of Huffman Coding cost to Fixed-Length Coding cost remains similar even when the file size increases significantly.
 
 - **e.**
 
-If every character has the same frequency, the Huffman tree is balanced. The expected cost would be nlogn because the tree will have n leaves and the tree is balanced. This cost is consistent across documents.
+If every character has the same frequency, the Huffman tree is balanced. The expected cost of the balanced Huffman tree is nlogn because the tree will have an overall cost per level of n and the depth of recursion will be logn. n mulitplied by logn is nlogn. This cost is consistent across documents.
